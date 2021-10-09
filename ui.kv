@@ -1,0 +1,105 @@
+<HomeScreen>:
+	side:side
+    screen_orientation: 'landscape' if self.width > self.height else 'portrait'
+	
+	canvas.before:
+	    Rectangle:
+	        pos:self.pos
+	        size:self.size
+	        source: 'resources/images/bg.png'
+
+    FloatLayout:
+    	Button:
+			id:side
+            size_hint:0.274,1
+			color:1,1,.1,.5
+			background_color:(.878,1,1,.794)
+			on_press:
+				print("press")
+
+		Button:
+			id:logo
+			color:0,0,0,1
+			size_hint:0.274,.22
+			pos_hint:{"center_x":.136,"center_y":.875}
+			background_color:(1,1,1,.794)
+			background_normal:'resources/images/python.png'
+			background_down:'resources/images/python.png'
+			on_press:
+				root.effect()
+				
+
+		Button:
+			text:"Download"
+			color:0,0,0,1
+			font_name:"os"
+			size_hint:0.274,0.14
+			pos_hint:{"center_x":.136,"center_y":.669}
+			background_color:(1,1,1,.794)
+		
+		Image:
+            size_hint: .073,.073
+            size: 24, 24
+			pos_hint:{"center_x":.23,"center_y":.669}
+            source: 'resources/images/install.png'
+
+		Button:
+			text:"Popular"
+			color:0,0,0,1
+			font_name:"os"
+			size_hint:0.274,0.14
+			pos_hint:{"center_x":.136,"center_y":.519}
+			background_color:(1,1,1,.794)
+
+		Image:
+            size_hint: .073,.073
+            size: 24, 24
+			pos_hint:{"center_x":.23,"center_y":.519}
+            source: 'resources/images/star.png'
+
+
+		Button:
+			color:0,0,0,1
+			text:"Search"
+			font_name:"os"
+			size_hint:0.274,0.14
+			pos_hint:{"center_x":.136,"center_y":.369}
+			background_color:(1,1,1,.794)
+
+		Image:
+            size_hint: .073,.073
+            size: 24, 24
+			pos_hint:{"center_x":.23,"center_y":.369}
+            source: 'resources/images/search.png'
+
+		Button:
+			color:0,0,0,1
+			text:"Show"
+			font_name:"os"
+			size_hint:0.274,0.14
+			pos_hint:{"center_x":.136,"center_y":.219}
+			background_color:(1,1,1,.794)
+
+		Image:
+            size_hint: .073,.073
+            size: 24, 24
+			pos_hint:{"center_x":.23,"center_y":.219}
+            source: 'resources/images/show.png'
+
+		Button:
+			color:0,0,0,1
+			text:"Installed"
+			font_name:"os"
+			size_hint:0.274,0.14
+			pos_hint:{"center_x":.136,"center_y":.069}
+			background_color:(1,1,1,.794)
+
+		Image:
+            size_hint: .073,.073
+            size: 24, 24
+			pos_hint:{"center_x":.23,"center_y":.069}
+            source: 'resources/images/data.png'
+
+	
+
+            

@@ -10,9 +10,6 @@ from kivy.uix.floatlayout import FloatLayout
 
 Builder.load_file("ui.kv")
 
-
-
-
 class HomeScreen(Screen):
 	
 	def effect(self):

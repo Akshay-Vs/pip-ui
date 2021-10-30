@@ -12,8 +12,7 @@ Builder.load_file("ui.kv")
 
 class HomeScreen(Screen):
 	
-	def effect(self):
-		
+	def effect(self):	
 		self.side.background_color=(0,1,1,.5)
 		Clock.schedule_once(self.back_to_default, .2)		
 		
